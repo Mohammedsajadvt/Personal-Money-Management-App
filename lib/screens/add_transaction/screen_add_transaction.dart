@@ -30,10 +30,13 @@ class _ScreenAddTransactionState extends State<ScreenAddTransaction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title:const Text('ADD TRANSACTIONS'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextFormField(
               controller: _purposeTextEdingController,
